@@ -2,7 +2,7 @@ import math
 
 class shape:
     def area (self):
-        pass
+        raise NotImplementedError
 
 class Circle(shape):
     def __init__ (self,radius):
