@@ -1,19 +1,24 @@
 import math
-class Circle:
+
+class shape:
+    def area (self):
+        pass
+
+class Circle(shape):
     def __init__ (self,radius):
         self.radius = radius
 
     def area (self):
         return math.pi * self.radius **2
 
-class Square:
+class Square(shape):
     def __init__ (self,side):
         self.side = side
 
     def area (self):
         return self.side * self.side
 
-class Triangle:
+class Triangle(shape):
     def __init__ (self,base,height):
         self.base = base
         self.height = height
@@ -21,10 +26,10 @@ class Triangle:
     def area (self):
         return 0.5 * self.base * self.height
 
-Circle = Circle(7)
-Square = Square(4)
-Triangle = Triangle(6,8)
+circle = Circle(7)
+square = Square(4)
+triangle = Triangle(6,8)
 
-print(f"Circle area: {Circle.area()}")
-print(f"Square area: {Square.area()}")
-print(f"Triangle area: {Triangle.area()}")
+print(f"Circle area: {circle.area()}")
+print(f"Square area: {square.area()}")
+print(f"Triangle area: {triangle.area()}")
